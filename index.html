@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <p>CASIO</p>
+                <input type="text" id="ans">
+                <br>
+                <input type="button" value="C" class="switch" id="clear" onclick="clearScreen()" >
+                <input type="button" value="DEL" class="switch" id="delete" onclick="backSpace()">
+                <input type="button" value="." class="switch" onclick="btnClick(value)">
+                <input type="button" value="/" class="switch oppr" onclick="btnClick(value)">
+                <br>
+                <input type="button" value="7" class="switch" onclick="btnClick(value)">
+                <input type="button" value="8" class="switch" onclick="btnClick(value)">
+                <input type="button" value="9" class="switch" onclick="btnClick(value)">
+                <input type="button" value="+" class="switch oppr" onclick="btnClick(value)">
+                <br>
+                <input type="button" value="4" class="switch" onclick="btnClick(value)">
+                <input type="button" value="5" class="switch" onclick="btnClick(value)">
+                <input type="button" value="6" class="switch" onclick="btnClick(value)">
+                <input type="button" value="X" class="switch oppr" onclick="btnClick('*')">
+                <br>
+                <input type="button" value="1" class="switch" onclick="btnClick(value)">
+                <input type="button" value="2" class="switch" onclick="btnClick(value)">
+                <input type="button" value="3" class="switch" onclick="btnClick(value)">
+                <input type="button" value="-" class="switch oppr" onclick="btnClick(value)">
+                <br>
+                <input type="button" value="00" class="switch" onclick="btnClick(value)">
+                <input type="button" value="0" class="switch" onclick="btnClick(value)">
+                <input type="button" value="=" class="switch" id="equal" onclick="findResult()">         
+            </form> 
+            </div>
+        </div>
+     <script src="calc.js"></script>
+</body>
+</html>
